@@ -1,0 +1,159 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, black, rgba(0, 0, 0,.7), transparent), url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* ============ GENERAL ============== */
+p {
+    color: rgb(207, 207, 207);
+}
+
+h2 {
+    color: blueviolet;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    justify-content: space-evenly;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 400px;
+}
+
+section .container > *{
+    min-width: 500px;
+}
+section{
+    
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 250px;
+    width: auto;
+    display: flex;
+}
+
+
+
+
+/* ============= FORMULAIRE ============= */
+
+#logo-scout{
+    height: 250px;
+    margin: auto;
+}
+
+label {
+    color: rgb(221, 221, 221);
+    font-size: larger;
+}
+
+form > div > *{
+    margin-top: 10px;
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+}
+
+form > div {
+    width: 70%;
+}
+
+select {
+    width: 100%;
+    color: white;
+    font-size: medium;
+    border-radius: 15px;
+    background-color: transparent; 
+    border: 1px solid #ccc; 
+    padding: 10px; /* Optionnel : Espacement interne */
+    appearance: none; /* Pour enlever le style natif de la combobox */
+    -webkit-appearance: none; /* Compatibilité avec les navigateurs Webkit */
+    -moz-appearance: none; /* Compatibilité avec Firefox */
+  }
+
+select option{
+    color: black;
+}
+
+#submit{
+    width: 70%;
+    margin: auto;
+    background-color: white; /* Couleur de fond */
+    color: black; /* Couleur du texte */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 20px; /* Bords arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur en main */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Ombre */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s, border-radius .2s;
+}
+
+#submit:hover {
+    color: white;
+    background-color: blueviolet; /* Couleur de fond au survol */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Ombre plus forte au survol */
+  }
+
+#submit:active {
+    transform: scale(0.95); /* Réduit légèrement la taille au clic */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre plus légère au clic */
+  }
+
+.btn-div{
+    padding-top: 50px;
+}
+/*============ FOOTER =================*/
+
+footer{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+footer > div > * {
+    height: 120px;
+    width: auto;
+}
+
+
+footer img{
+    height: 120px;
+}
